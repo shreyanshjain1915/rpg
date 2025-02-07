@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html,body{
+            background-color: aqua;
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+        h1{ 
+        font-size:xx-large ;
+        color:red ;
+        border-bottom: 1px solid black;
+        align-items: center;
+        display: flex;
+        justify-content: center ;
+    }
+    .container{
+        border: 2px solid red;
+        display: flex ;
+       justify-content: center;
+       align-items: center;
+       height: 100%;
+   
+    } 
+    .box{
+        background-color: wheat;
+        padding: 100px;
+        align-items: center;
+
+    }     
+        
+
+    </style>
+</head>
+<body>
+    
+   <div class="container">
+    <div class="box">
+        <h1>RPG GAME</h1> <br> <br>
+        <button onclick="rock()"> <img src="https://sihoonathan.github.io/rock-paper-scissors/assets/img/rock2.png" height="200px" ></button>
+       <button onclick="paper()"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdmu4yxjuerhA4yPoIKpgfqGy3XsYVmhcKpM74YLYWeDp_kdwGpYh2OEdT3krwh3lDsso&usqp=CAU" height="200px"></button>
+       <button onclick="scissor()"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRU__p-H4AAGYWqg7beL5ZhAp_9luqcU2yvtydhD1r7qDexI694iaKsgO9E7FM1mlSatdE&usqp=CAU"height="200px"> </button>
+       
+    </div>
+   </div>
+<script>
+function rock()
+{let value= Math.floor(Math.random()*3);
+    let r=0;
+    if (
+        value==r
+       
+    ){
+        alert("tie");
+        console.log("com chooses rock")
+    }
+else if( value==1)
+{alert("com won");
+console.log("com chooses paper"
+
+)
+}
+
+else(
+    alert("you won")
+)
+
+
+    
+
+}
+function paper()
+{
+    let value= Math.floor(Math.random()*3);
+    let p=1;
+    if (
+        value==p
+       
+    ){
+        alert("tie");
+    }
+else if( value==0)
+{alert("com won");}
+
+else(
+    alert("you won")
+)
+
+
+}
+function scissor()
+{let value= Math.floor(Math.random()*3);
+    let s=2;
+    if (
+        value==s
+       
+    ){
+        alert("tie");
+    }
+else if( value==1)
+{alert("you won");}
+
+else(
+    alert("com won")
+)
+
+
+
+} 
+</script>
+</body>
+</html>
